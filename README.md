@@ -1,7 +1,7 @@
 # MVN, EAR, EJB, JSF Boilerplate.
 
-## How to  
-This boilerplate is meant to be used with any distribution of wildfly that supports Jakarta EE 8.
+## About 
+This boilerplate is meant to be used with any distribution of wildfly that supports Jakarta EE 8, after clonning it you might delete the README.md file and readme_assets folder.
 ## How to create new modules
 1. Download the proper boilerplate code of the kind of module you want to add.  
 [EJB](https://github.com/migonos01454f/jejb-boilerplate)  
