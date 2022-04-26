@@ -17,10 +17,7 @@ public class HiManager {
 
 	public void add(int id, String name) {
 
-		Test test = new Test();
-		test.setId(id);
-		test.setName(name);
-		em.persist(test);
+		System.out.println("Added, " + id + name);
 
 	}
 
