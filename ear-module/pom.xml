@@ -1,6 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
                          http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
@@ -15,18 +13,19 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>org.sonatype.mavenbook.multi</groupId>
+			<groupId>${project.groupId}</groupId>
 			<artifactId>ejb-module</artifactId>
 			<type>ejb</type>
 		</dependency>
 		<dependency>
-			<groupId>org.sonatype.mavenbook.multi</groupId>
+			<groupId>${project.groupId}</groupId>
 			<artifactId>war-module</artifactId>
 			<type>war</type>
 		</dependency>
 	</dependencies>
 
 	<build>
+		<finalName>${project.parent.artifactId}-${project.version}</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-ear-plugin</artifactId>
@@ -38,17 +37,24 @@
 					</archive>
 					<modules>
 						<ejbModule>
-							<groupId>org.sonatype.mavenbook.multi</groupId>
+							<groupId>${project.groupId}</groupId>
 							<artifactId>ejb-module</artifactId>
 							<bundleFileName>ejb-module-1.0.jar</bundleFileName>
 						</ejbModule>
 						<webModule>
-							<groupId>org.sonatype.mavenbook.multi</groupId>
+							<groupId>${project.groupId}</groupId>
 							<artifactId>war-module</artifactId>
 							<contextRoot>/jear_boilerplate</contextRoot>
-							<bundleFileName>war-module-1.0.war</bundleFileName>
+							<bundleFileName>war-module-${project.version}.war</bundleFileName>
 						</webModule>
 					</modules>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.wildfly.plugins</groupId>
+				<artifactId>wildfly-maven-plugin</artifactId>
+				<configuration>
+					<skip>false</skip>
 				</configuration>
 			</plugin>
 		</plugins>
