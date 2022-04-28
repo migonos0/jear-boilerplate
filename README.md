@@ -119,4 +119,5 @@ In order to get the best experience or replicate the integration of an Enterpris
 1. [Maven J2EE Archetype](https://pastebin.com/raw/TLTFh9aW)
 2. [How to build an EAR project with EJB and WAR using Maven?](https://stackoverflow.com/questions/32990664/how-to-build-an-ear-project-with-ejb-and-war-using-maven)
 3. [Apache Maven EAR Plugin Documentation](https://maven.apache.org/plugins/maven-ear-plugin/index.html)
-4. [Wildfly quickstart sgilda's repository](https://github.com/sgilda/wildfly-quickstart)
+4. [Wildfly's quickstart repository](https://github.com/wildfly/quickstart)
+5. [Sgilda's quickstart repository](https://github.com/sgilda/wildfly-quickstart)
