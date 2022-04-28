@@ -39,7 +39,7 @@
 						<ejbModule>
 							<groupId>${project.groupId}</groupId>
 							<artifactId>ejb-module</artifactId>
-							<bundleFileName>ejb-module-1.0.jar</bundleFileName>
+							<bundleFileName>ejb-module-${project.version}.jar</bundleFileName>
 						</ejbModule>
 						<webModule>
 							<groupId>${project.groupId}</groupId>
