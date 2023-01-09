@@ -121,3 +121,5 @@ In order to get the best experience or replicate the integration of an Enterpris
 3. [Apache Maven EAR Plugin Documentation](https://maven.apache.org/plugins/maven-ear-plugin/index.html)
 4. [Wildfly's quickstart repository](https://github.com/wildfly/quickstart)
 5. [Sgilda's quickstart repository](https://github.com/sgilda/wildfly-quickstart)
+6. [Jakarta EE Web Api](https://mvnrepository.com/artifact/jakarta.platform/jakarta.jakartaee-web-api)
+7. [Jakarta EE Api](https://mvnrepository.com/artifact/jakarta.platform/jakarta.jakartaee-api)
